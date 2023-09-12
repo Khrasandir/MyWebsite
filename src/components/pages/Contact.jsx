@@ -1,4 +1,5 @@
 import DefaultLayout from '../defaultLayout/DefaultLayout';
+import ContactForm from '../comps/ContactForm';
 
 const Contact = () => {
   return (
@@ -8,6 +9,7 @@ const Contact = () => {
           Hey I just met you, and this is crazy, so here&apos;s my Email,
           message me maybe?
         </h1>
+        <ContactForm />
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
           harum provident dolor est aspernatur similique eaque totam, eos nemo
