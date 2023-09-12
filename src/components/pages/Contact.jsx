@@ -1,11 +1,13 @@
-import React from 'react';
 import DefaultLayout from '../defaultLayout/DefaultLayout';
 
 const Contact = () => {
   return (
     <>
       <DefaultLayout>
-        <h1>Call me maybe?</h1>
+        <h1>
+          Hey I just met you, and this is crazy, so here&apos;s my Email,
+          message me maybe?
+        </h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
           harum provident dolor est aspernatur similique eaque totam, eos nemo

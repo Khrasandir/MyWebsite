@@ -1,4 +1,3 @@
-import React from 'react';
 import DefaultLayout from '../defaultLayout/DefaultLayout';
 
 const Home = () => {
