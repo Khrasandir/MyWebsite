@@ -1,6 +1,5 @@
 import Header from './Header';
 import Footer from './Footer';
-import App from '../../App';
 
 const DefaultLayout = ({ children }) => {
   return (
