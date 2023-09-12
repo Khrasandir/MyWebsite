@@ -1,18 +1,35 @@
 import Header from './Header';
 import Footer from './Footer';
+import { useEffect, useState } from 'react';
+import Spinner from '../comps/Spinner';
 
 const DefaultLayout = ({ children }) => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <>
+          <header>
+            <Header />
+          </header>
 
-      <main>{children}</main>
+          <main>{children}</main>
 
-      <footer>
-        <Footer />
-      </footer>
+          <footer>
+            <Footer />
+          </footer>
+        </>
+      )}
     </>
   );
 };
